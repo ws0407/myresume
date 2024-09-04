@@ -29,7 +29,10 @@
 
 \RequirePackage[%
   a4paper,%
-  margin=1.4cm,%
+  left=15mm,
+  right=15mm,
+  top=12mm, 
+  bottom=12mm,
   includefoot,
 ]{geometry}
 \RequirePackage{xparse}
@@ -226,7 +229,7 @@
 }
 
 \newcommand*{\tags}[1]{%
-  \icon{\large\faTags}\hspace{-0.3em}
+  \icon{\normalsize\faTags}\hspace{-0.5em}
   \foreach \n in {#1}{\tag{\n}\hspace{0.1em}}
 }
 
@@ -300,7 +303,7 @@
 \newcommand*{\github}[1]{%
   \iconlink{\githubSymbol}%
     {https://github.com/#1}%
-    {\texttt{git@#1}}%
+    {\texttt{github@#1}}%
 }
 % Email address
 \newcommand*{\email}[1]{%
