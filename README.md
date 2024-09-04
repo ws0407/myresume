@@ -1,4 +1,4 @@
-# resume_en-cn
+# myresume
 
 个人简历Latex版本，中文and英文
 
