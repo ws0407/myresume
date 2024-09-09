@@ -35,8 +35,8 @@
   \university{清华大学}\hspace{1em}
   \degree{计算机技术 \textbullet 硕士}\hspace{1em}
   % \birthday{2000-05-10}
-  \address{安徽省宿州市} \\
-  \mobile{198-0123-1323}\hspace{.77em}
+  \address{安徽省宿州市} \newline
+  \mobile{187-2636-0542}\hspace{.77em}
   \email{wangs22@mails.tsinghua.edu.cn}\hspace{.77em}
   \github{ws0407}
   % Custom information:
@@ -45,8 +45,8 @@
 }
 
 \begin{document}
-\makeheader
 
+\makeheader
 % %======================================================================
 % % Summary & Objectives
 % %======================================================================
@@ -56,6 +56,7 @@
 % 热衷计算机和网络安全技术，熟练使用常见的开发、测试软件，熟悉反汇编、漏洞挖掘、Linux安全工具。
 % \par}
 % \vspace{-.5em}
+
 %======================================================================
 \sectionTitle{教育背景}{\faGraduationCap}
 %======================================================================
@@ -64,7 +65,7 @@
     {至今}%
     [2022.09]%
     {清华大学（研究生，保送）}%
-    {计算机技术 \textbullet\ GPA：3.85/4.00}%
+    {计算机技术 \textbullet \ GPA：3.85/4.00}%
     {}{主要荣誉：发表学术论文一篇（CCF-A类期刊）、清华大学社会工作奖学金}
 
   \separator{0.1ex}
@@ -72,7 +73,7 @@
     {2022.06}%
     [2018.09]%
     {北京邮电大学（本科）}%
-    {网络空间安全（实验班） \textbullet\ GPA：3.77/4.00，排名：1/105}%
+    {网络空间安全（实验班） \textbullet \ GPA：3.77/4.00，排名：1/105}%
     {}{主要荣誉：本科生特等奖学金、国家奖学金、北京市三好学生、北京市优秀毕业生}
 
   % \separator{0.1ex}
@@ -90,27 +91,28 @@
 % \Huge, \huge, \Large, \large, \small, \tiny
 \begin{competences}
   \comptence{编程语言}{%
-  \smallicon{\mfPython}Python, \hspace{.6em} \smallicon{\textbf{\sffamily{C\kern-.1em\raisebox{.3ex}{/}\kern-.2em C\kern-.2em \raisebox{.45ex}{\tiny{++}}}}}\hspace{.6em}, 
+  熟练使用\hspace{.6em}
+ \smallicon{\textbf{\sffamily{C\kern-.1em\raisebox{.3ex}{/}\kern-.2em C\kern-.2em \raisebox{.45ex}{\tiny{++}}}}}\hspace{.6em}, 
+ \smallicon{\mfPython}Python, \hspace{.3em}
+ 熟悉
   \smallicon{\mfJavaBold}\hspace{-.3em}Java, 
   \smallicon{\mfHtmlfiveAlt}\hspace{-.3em}
   \smallicon{\mfCssthreeAlt}\hspace{-.3em}
-  \smallicon{\mfJavascriptAlt}, 
-  \smallicon{\mfPhpAlt}PHP, 
-  \hspace{.6 em}\smallicon{\LaTeX}\hspace{.6 em}, 
-  \smallicon{\faMarkdown}Markdown
+  \smallicon{\mfJavascriptAlt}HTML/CSS/JS, 
+  \smallicon{\mfPhpAlt}PHP等
   }
   \comptence{专业工具}{%
     SSH, 
     \smallicon{\mfGit}Git; 
     \smallicon{\mfDocker}Docker, 
     \smallicon{\faLinux}Linux, Make; 
-    Burpsuite, C-Spider, SecVas, SecureCAT, SenInfo, IDA
+    AWVS, Burpsuite, C-Spider, SenInfo, IDA
   }
   \comptence{数据分析}{%
     PyTorch, Tensorflow；Numpy, Pandas, Matplotlib；Keras, Scikit-learn
   }
   \comptence{网站开发}{%
-    Django, Flask; \smallicon{\mfJavascriptAlt}JavaScript, \smallicon{\mfJquery}jQuery, \smallicon{\mfBootstrap}Bootstrap; \smallicon{\mfMssql}\hspace{-.4 em}\smallicon{\mfMysql}SQL
+    Django, Flask, SSM; \smallicon{\mfJavascriptAlt}JavaScript, \smallicon{\mfJquery}jQuery, \smallicon{\mfBootstrap}Bootstrap; \smallicon{\mfMssql}\hspace{-.4 em}\smallicon{\mfMysql}SQL
   }
   \comptence{数理基础}{
     全国大学生数学竞赛\textbf{一等奖}、物理竞赛\textbf{一等奖}、美国大学生数学建模竞赛\textbf{H奖}
@@ -142,40 +144,46 @@
 \vspace{-0.2cm}
 \begin{itemize}
   \item \link{https://github.com/ws0407/RBLJAN}{\texttt{RBLJAN}}:
-    提出了一个高效的深度学习框架：\textbf{高鲁棒性的字节-标签联合注意力网络}，并专注于\textbf{加密网络流量分类}。该框架结合分类器与对抗流量生成器，通过并行处理和注意力学习，捕捉字节与标签之间的关联，相比于现有方法，RBLJAN具有优越的检测\textbf{准确性}、\textbf{速度}、\textbf{鲁棒性}和\textbf{可解释性}。\textbf{论文}: Robust Byte-Label Joint Attention Network for Network Traffic Classification（\textbf{TDSC}, \textbf{CCF-A}类期刊）
-  \item \link{https://github.com/ws0407/code_audit}{\texttt{CodeVD}}:
-    \textbf{基于大模型微调的源代码漏洞定位和解释工作研究}，微调大模型学习现有数据集（提交信息、源代码、漏洞标签）和各类漏洞的先验知识（可能触发漏洞的语句PoI），从而完成更细粒度的漏洞样本构建和源代码漏洞挖掘。该技术\textbf{已在华为技术有限公司实习期间验证了有效性}，论文正在撰写和投稿
+    成功设计并实现了一个创新的深度学习框架——高鲁棒性的字节-标签联合注意力网络，并专注于\textbf{加密流量分类}。通过并行处理、注意力学习和对抗流量生成等机制，RBLJAN比现有方法具有优越的检测\textbf{准确性}、\textbf{速度}、\textbf{鲁棒性}和\textbf{可解释性}。该方法已投稿至\textbf{TDSC}期刊（\textbf{CCF-A}类，学生一作）
+    {\scriptsize\tags{Pytorch,深度学习, 网络协议, 高性能计算}}
+  \item \link{https://github.com/ws0407/CodeVD}{\texttt{CodeVD}}:
+    \textbf{基于大模型微调的源代码漏洞定位和解释工作研究}，微调大模型学习代码数据集（提交信息、源代码、漏洞标签）和各类漏洞的先验知识，从而完成更细粒度（代码行级）的漏洞样本构建和源代码漏洞挖掘。该技术\textbf{已在华为技术有限公司实习期间验证了有效性}，论文正在撰写和投稿
+    {\hspace{.5em}\scriptsize\tags{爬虫, 代码语言处理, 特征挖掘, 大模型微调}}
 \end{itemize}
 \vspace{-0.1cm}
 {\color{accentcolor}{\smallicon{\faGithub} \textbf{个人项目（部分）}}}
 \vspace{-0.2cm}
+
+% \setlength\leftskip{1em}\hspace{2em}在实习期间、实践课程和平时参与多个项目的研究和实现，积累了丰富的编程开发、框架搭建、算法实现的知识，提升了团队协作、项目管理和快速学习的能力，部分项目如下：
+% \vspace{-0.2cm}
 \begin{itemize}
-  \item \link{https://github.com/ws0407/NetworkAnalysisPrototypeSystem}{\texttt{NAPS}}:
-    国家重点研发计划课题的\textbf{原型系统}（集成8个大型科研项目）
-  \item \link{https://github.com/ws0407/BotnetAD}{\texttt{BotnetAD}}:
-    基于机器学习和 DNS 流量特征分析的\textbf{僵尸网络检测}工具（Python, 随机森林, 特征挖掘）
-  \item \link{https://github.com/ws0407/WVSS}{\texttt{WVSS}}:
-   \textbf{ Web 漏洞扫描}系统（支持 SQL 注入、XSS、文件上传、弱口令四类漏洞的基本扫描）
-  \item \link{https://github.com/ws0407/CloudVS}{\texttt{CloudVS}}:
-    企业云环境的搭建及云环境下 KVM \textbf{虚拟机镜像漏洞扫描}工具 
-  \item \link{https://github.com/ws0407/TrojanControlSystem}{\texttt{TrojanCS}}:
-    Windows10 操作系统\textbf{远程木马控制系统}的设计与实现（客户端、服务端）
-  \item \link{https://github.com/ws0407/2ndSQLDetection}{\texttt{2ndSQLD}}:
-    基于源代码分析和自动化执行的\textbf{二阶 SQL 注入漏洞检测}工具 
-  \item \link{https://github.com/xd0419/webpan}{\texttt{NetDisk}}:
-    基于 Java SSM 和 RSA 密码体制的\textbf{安全网盘系统} 
-  \item \link{https://github.com/ws0407/TEnDeDriver}{\texttt{TEnDeDriver}}:
-    Win10 内核文件透明加解密驱动开发和 SIEM 日志分析框架的构建 
+  \item 在实习期间、实践课程和平时参与多个项目的研究和实现，并在开源平台\smallicon{\faGithub}\link{https://github.com/ws0407}{Github}分享交流。积累了丰富的编程开发、框架搭建、算法实现的知识，提升了团队协作、项目管理和快速学习的能力，部分项目如下：
+  \item \link{https://github.com/ws0407/NetworkAnalysisPrototypeSystem}{\texttt{NAPS (Python/C++)}}:
+    国家重点研发计划课题的\textbf{原型系统}（集成8个大型AI科研项目）
+  \item \link{https://github.com/ws0407/BotnetAD}{\texttt{BotnetAD (Python)}}:
+    基于\textbf{机器学习}和 DNS 流量\textbf{特征分析}的僵尸网络检测工具（Python, 随机森林, 特征挖掘）
+  \item \link{https://github.com/ws0407/WVSS}{\texttt{WVSS (Python)}}:
+   基于Flask框架的Web 漏洞扫描系统（支持 SQL 注入/XSS/文件上传/弱口令的基本扫描）
+  \item \link{https://github.com/ws0407/TrojanControlSystem}{\texttt{TrojanCS (C++/Python)}}:
+    Windows10 操作系统远程木马控制系统的设计与实现（客户端、服务端）
+  \item \link{https://github.com/ws0407/2ndSQLDetection}{\texttt{2ndSQLD (PHP/JS)}}:
+    基于\textbf{源代码分析}和\textbf{自动化执行}的二阶 SQL 注入漏洞检测工具 
+  \item \link{https://github.com/xd0419/webpan}{\texttt{NetDisk (Java)}}:
+    基于 \textbf{Java SSM} 和 RSA 密码体制的安全网盘系统
+  \item \link{https://github.com/ws0407/TEnDeDriver}{\texttt{TEnDeDriver (C++)}}:
+    Win10 内核文件透明加解密\textbf{驱动开发}和 SIEM 日志分析框架的构建 
+  % \item \textbf{收获}：这些在实习期间、实践课程和平时参与的项目研究和实现，使我积累了丰富的编程开发、框架搭建、算法实现的知识，提升了团队协作、项目管理和快速学习的能力
 \end{itemize}
 
 %======================================================================
 \sectionTitle{实习/社会工作}{\faBriefcase}
-%======================================================================
+%======================================================================·
+\vspace{-0.2cm}
 \begin{experiences}
   \experience%
     [2024.07]%
     {2023.07}%
-    {\textbf{测试技术员}（实习） @ 华为技术有限公司 \textbullet 华为云计算（东莞）}%
+    {\textbf{测试技术员}（实习） @ \lower.1em\hbox{\includegraphics[scale=0.07]{photo/HuaweiLogo.pdf}} \textbullet 华为云计算（东莞）}%
     [\begin{itemize}
       \item 研究\textbf{基于大模型的源代码漏洞检测}技术，清华-华为道元班联合培养项目
       \item \textbf{JavaWeb漏洞挖掘}，参与\textbf{华为云服务项目测试}（CodeArtscheck、AstroFlow等）
@@ -186,7 +194,7 @@
   \experience%
     [2022.07]%
     {2021.07}%
-    {\textbf{原型系统开发}（实习） @ 清华大学 \textbullet 网络研究院}%
+    {\textbf{原型系统开发}（实习） @ \lower.1em\hbox{\includegraphics[scale=0.6]{photo/Tsinghua.pdf}} \textbullet 网络研究院}%
     [\begin{itemize}
       \item 前后端\textbf{全栈开发}，集成国家重点研发计划（互联网基础行为基准建模与异常分析）的8个子科研项目，实现多线程数据管理、任务执行和监控、结果展示与分析
     \end{itemize}]
