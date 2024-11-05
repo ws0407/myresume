@@ -57,7 +57,6 @@
 }{}
 \RequirePackage{microtype}
 \RequirePackage{fontmfizz}
-\RequirePackage{ragged2e}
 
 %
 % Hyperref
@@ -320,6 +319,7 @@
     \ifdef{\@zh}%
       {{\LARGE\bfseries #2 #1}}%
       {{\LARGE\bfseries #1 \textsc{#2}}}%
+      \hspace{0.5cm} \lower.3em\hbox{\includegraphics[scale=1]{photo/Tsinghua.pdf}}
 }}
 
 % Define the profile to show in the header
@@ -350,11 +350,12 @@
     \begin{minipage}{\dimexpr\linewidth-\@photowidth-2em}
   }
     \user{\@firstname}{\@lastname}
+    
     \ifdef{\@tagline}{%
-      \medskip \\
+      \medskip 
       \resumetitle{\@tagline}
     }{}
-    \medskip \\
+    \medskip 
     \@profile
   \end{minipage}
 }
@@ -378,19 +379,6 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-
-% Basic entries listing
-\NewDocumentEnvironment{entries}{o}{%
-  \IfValueTF{#1}%
-    {\begin{tabular}{R{\leftcolwidth} #1 L{\rightcolwidth}}}%
-    {\begin{tabular}{R{\leftcolwidth} L{\rightcolwidth}}}%
-}{%
-  \end{tabular}
-}
-
-\NewDocumentCommand{\entry}{m m}{
-  #1 & \begin{minipage}[t]{\rightcolwidth} #2 \end{minipage} \\
-}
 
 % Separator (empty space) between two entries
 \newcommand*{\separator}[1]{%
